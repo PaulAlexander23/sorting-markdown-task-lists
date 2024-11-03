@@ -1,10 +1,14 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(cmake_demo LANGUAGES CXX)
+project(sort_todo_lines LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 
-add_executable(cmake_demo.out)
-target_sources(cmake_demo.out PUBLIC src/main.cpp src/hello.cpp src/goodbye.cpp)
-target_include_directories(cmake_demo.out PUBLIC include)
+add_library(MyLibrary STATIC src/token.cpp src/parser.cpp src/processor.cpp)
+target_include_directories(MyLibrary PUBLIC include)
+
+add_executable(sort_todo_lines.out)
+target_sources(sort_todo_lines.out PUBLIC src/main.cpp)
+target_include_directories(sort_todo_lines.out PUBLIC include)
+target_link_libraries(sort_todo_lines.out PRIVATE MyLibrary)
