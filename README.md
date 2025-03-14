@@ -25,7 +25,7 @@ To sort the tasks in a file and output the result to a file:
 ## Testing
 
 ```bash
-make test
+make check
 ```
 
 ## License
