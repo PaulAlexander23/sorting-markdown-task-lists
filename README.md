@@ -1,5 +1,7 @@
 # Sorting Markdown task lists
 
+![Test Status](https://github.com/PaulAlexander23/sorting-markdown-task-lists/actions/workflows/c-cpp.yml/badge.svg)
+
 ## Pre-requisites
 
 None.
