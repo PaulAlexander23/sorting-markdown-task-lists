@@ -2,6 +2,18 @@
 
 ![Test Status](https://github.com/PaulAlexander23/sorting-markdown-task-lists/actions/workflows/c-cpp.yml/badge.svg)
 
+Simple c++ program to sort tasks in a markdown file, so that the completed tasks are at the bottom of the list and the order is preserved.
+
+Markdown tasks are defined as:
+```
+- [ ] a task
+- [ ] another task
+- [x] completed task
+```
+A task is considered completed if it has an 'x' in the brackets.
+
+There are other task statuses that are not currently considered in this program.
+
 ## Pre-requisites
 
 None.
